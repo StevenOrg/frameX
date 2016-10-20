@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!--[if !IE]><!-->
+	<link href="style.css" rel="stylesheet">
+	<!--<![endif]-->
+	<meta Cache-Control="max-age[5]">
+	<script src="acenter.js"></script>
+	<style>
+		.box{
+			width: 100%;
+			padding:3%;
+			box-sizing: border-box;
+			overflow: hidden;
+		}
+
+		.box .loader{
+			width: 100%;
+			float:left;
+			height: 200px;
+			margin-right: 3%;
+			border:1px #ccc solid;
+			box-sizing: border-box;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+
+
+		.loading-1 i{
+			display: inline-block;
+			width: 4px;
+			height: 35px;
+			border-radius: 2px;
+			margin:0 2px;
+			background-color: #333;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="loader">
+			<div class="loading-1" id="aTarget">
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+
+	newCssAnimation({
+		type:'type1',
+		target:'aTarget',
+		gap: 100,
+		num: 6
+	});
+</script>
+</body>
+<html>
